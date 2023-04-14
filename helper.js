@@ -72,9 +72,9 @@ async function getImageWithRetry(prompt) {
           ":"
         )}`
       );
-      return getImage([como, " " + oque2].join(":"));
+      return getImageWithRetry([como, " " + oque2].join(":"));
     }
-    // console.error('getImage error', error)
+    // console.error('getImageWithRetry error', error)
   }
 }
 
